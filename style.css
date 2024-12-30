@@ -1,0 +1,235 @@
+@import 'https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap';
+
+ /*!BACKGROUND SITO */ 
+body{
+
+background-image: url(background.png);
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center;
+background-size: cover;
+
+}
+
+/* !CARATTERISTICHE DEL TITOLO IN ALTO */
+.Titolo{
+
+font-family: "Rubik", sans-serif;
+justify-content: center;
+align-items: center;
+text-align: center;
+color: white;
+font-size: 35px;
+-webkit-text-stroke: 2px black;
+
+}
+
+/* !POSIZIONE CENTRALE DELLE LISTE */
+#lista{
+
+font-family: "Rubik", sans-serif;
+padding-left: 20px;
+color: blue;
+}
+
+
+/* !CARATTERISTICHE DELLE LISTE E DEL LORO TESTO */
+.sezione{
+
+display: flex;
+flex-direction: row;
+font-family: "Rubik", sans-serif;
+color: whitesmoke;
+gap: 490px;
+justify-content: left;
+align-items: right;
+margin-top: 40px;
+font-size: 30px;
+margin-left: 130px;
+font-weight: 700;
+-webkit-text-stroke: 2px black;
+text-align: left;
+
+}
+
+
+/* !CARATTERISTICHE DEI BOTTONI */
+.button{
+
+font-family: "Rubik", sans-serif;
+display: flex;
+flex-direction: row;
+justify-content: left;
+align-items: left;
+margin-top: 40px;
+gap: 400px;
+margin-right: 100px;
+text-align: left;
+
+}
+
+/* !COLORE BACKGROUND PULSANTE 1,2,3 ATTIVO */
+#pulsante1:active{
+
+background-color: grey;
+color: white;
+
+}
+
+#pulsante2:active{
+
+background-color: grey;
+color: white; 
+
+}
+
+#pulsante3:active{
+
+background-color: grey;
+color: white;
+
+}
+
+/* !CARATTERISTICHE DEL TESTO NEI PULSANTI E BORDI DEI PULSANTI */
+#pulsante1, #pulsante2, #pulsante3{
+
+font-size: 35px;
+font-family: "Rubik", sans-serif;
+align-items: center;
+justify-content: center;
+border: 5px solid black ;
+margin-left: 45px;
+font-weight: 600;
+-webkit-text-stroke: 1px white;
+
+}
+
+/* !COLORE BACKGROUND DEI PULANTI 1,2,3 */
+#pulsante1{
+
+background-color: green;
+
+}
+
+#pulsante2{
+
+background-color: orange;
+
+}
+
+#pulsante3{
+
+background-color: red;
+
+}
+
+/* !CARATTERISTICHE SEPARATORE SUPERIORE */
+#riga{
+
+color: red;
+border: 5px solid white;
+
+}
+
+/* !CARATTERISTICHE SEPARATORE INFERIORE */
+#rigadue{
+
+border: 5px solid white;
+
+
+}
+
+/* !SCAMBIO DEL MARKER CON LA STELLA */
+ul{
+
+list-style-type: none;
+padding-left: 20px;
+
+}
+
+ul li {
+background: url('stella.png') no-repeat left center;  
+background-size: 50px 50px;  
+padding-left: 50px;  
+
+}
+
+/* !CARATTERISTICHE INSTAGRAM */
+.ig{
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+text-align: center;
+font-family: "Rubik", sans-serif;
+color: white;
+
+}
+
+/* !CARATTERISTICHE DIRITTI */
+.diritti{
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+text-align: center;
+font-family: "Rubik", sans-serif;
+color: white;
+
+}
+
+/* !Stili generali per desktop (larghezza schermo più grande) */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* !Media query per dispositivi mobili (max-width: 768px) */
+@media (max-width: 768px) {
+    header {
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container > div {
+        margin-bottom: 10px;
+    }
+}
+
+/* !Media query per schermi più piccoli (es. smartphone) */
+@media (max-width: 480px) {
+    header {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .container > div {
+        margin-bottom: 5px;
+    }
+}
